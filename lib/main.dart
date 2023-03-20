@@ -1,4 +1,5 @@
 import 'package:cml/providers/great_places.dart';
+import 'package:cml/screens/add_place_screen.dart';
 import 'package:cml/screens/places_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -8,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({key});
 
   // This widget is the root of your application.
   @override
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.amber,
         ),
         home: PlacesListScreen(),
+        routes: {
+          AddPlaceScreen.routeName: (ctx) => AddPlaceScreen(),
+        },
       ),
     );
   }
