@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:cml/widgets/location_input.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -53,6 +54,10 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
                       height: 10,
                     ),
                     ImageInput(_selectImage),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    LocationInput(),
                   ],
                 ),
               ),
@@ -62,6 +67,10 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
             icon: Icon(Icons.add),
             label: Text('Add Place'),
             onPressed: _savePlace,
+            style: ElevatedButton.styleFrom(
+              elevation: 0,
+              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            ),
           ),
         ],
       ),

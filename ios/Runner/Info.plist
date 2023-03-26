@@ -11,6 +11,8 @@
 <key>NSBluetoothPeripheralUsageDescription</key> <string>Bluetooth Access Warning</string>
 <key>NSCalendarsUsageDescription</key> <string>Calendar Access Warning</string>
 <key>NSRemindersUsageDescription</key> <string>Reminder Access Warning</string>
+<key>io.flutter.embedded_views_preview</key>
+<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

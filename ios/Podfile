@@ -1,6 +1,15 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '11.0'
+use_frameworks!
 
+target 'Project' do
+    pod 'GoogleMaps'
+end
+
+target 'ProjectTests' do
+     inherit! :search_paths
+     pod 'Mockingjay'
+end
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
